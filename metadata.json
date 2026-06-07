@@ -1,0 +1,6 @@
+{
+  "name": "Dental Roots Kathmandu",
+  "description": "Premium world-class dental care clinic in Kathmandu, Nepal, offering comprehensive oral health services, interactive appointment booking, and patient guidelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

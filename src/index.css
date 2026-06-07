@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Manrope", sans-serif;
+  
+  --color-primary: #004fbf;
+  --color-primary-container: #1e67e7;
+  --color-surface-white: #ffffff;
+  --color-surface-dim: #d9dadb;
+  --color-surface-container: #edeeef;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-on-surface-variant: #424654;
+  --color-accent-teal: #147D8F;
+  --color-secondary-container: #ecdcdc;
+  --color-secondary-fixed: #efdfdf;
+  --color-outline-variant: #c2c6d7;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: rgba(255, 255, 255, 0.85);
+  }
+}
